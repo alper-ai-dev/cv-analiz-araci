@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
-
-API_KEY = "YOUR_API_KEY"
+import os
+API_KEY = os.environ.get("OPENROUTER_API_KEY")
 
 st.title("🤖 AI Destekli CV Analiz Aracı")
 st.write("CV'nizi aşağıya yapıştırın, AI analiz etsin!")
